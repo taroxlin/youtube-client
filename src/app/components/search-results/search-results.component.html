@@ -1,6 +1,4 @@
 <div class='search-results'>
-    <app-search-item></app-search-item>
-    <p>
-        this is body of search table
-    </p>
+    <app-search-item [ngStyle]="getColor(item.snippet.publishedAt)" *ngFor ='let item of respond.videoArray' [item]='item' class="video-item" id={{item.id}}>
+    </app-search-item>
 </div>

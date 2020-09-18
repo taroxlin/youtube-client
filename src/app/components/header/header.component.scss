@@ -1,8 +1,138 @@
+@use '../../../assets/variables';
+
 :host {
-    p{
-        width: 100vw;
-        height: 15vh;
-        background-color: blue;    
-        color:white;
-    } 
+    .header{
+        background-color: #E5E5E5;
+        display: grid;
+        grid-template: ". search login ."
+                        ". sorting . .";
+        grid-template-rows: 60% 40%;
+        grid-template-columns: 28% 50% 17% 5%;
+        width: 100%;
+        margin: 0 auto;
+        max-width: 1400px;
+        height: 109px;
+        .search-form{
+            grid-area:  search;
+            display: flex;
+            width: 100%;
+            justify-content: space-evenly;
+            margin-top: 1px;
+            .logo-icon{
+                width: 43.5px;
+                margin-left: 24px;
+                margin-right: 8px
+            }
+            form {
+                width: 90%;
+                display: flex;
+                align-items : center;
+                .search-button{
+                    background-color: variables.$theme-color;
+                    color:white;
+                    padding: 1px;
+                    width: 65px;
+                    height: 18px;
+                    border:none;
+                    border-radius: 0 5px 5px 0;
+                    font-size: 10px;
+                    font-weight: 300;
+                    box-shadow: 1px 1px 2px 0px variables.$theme-color,1px -1px 2px 0px variables.$theme-color;
+                }
+                input {
+                    background-color: whitesmoke;
+                    outline: none;
+                    border: none;
+                    height: 18px;
+                    line-height: 16px;
+                    width: 62%;
+                    font-size: 12px;
+                    
+                    
+                }
+                .settings-button{
+                    background-color: variables.$theme-color;
+                    border-radius: 5px;
+                    width: 20px;
+                    height: 20px;
+                    padding:4px;
+                    margin-left: 9px;
+                    border:none;
+                    outline:none;
+                    vertical-align: center;
+                    box-shadow: 1px 1px 2px 0px variables.$theme-color,1px -1px 2px 0px variables.$theme-color;
+                }
+            }
+        }
+        .sorting-form{
+            grid-area: sorting;
+            display: flex;
+            flex-direction: row;
+            margin: auto 24px auto;
+            line-height: 16px;
+            padding-top: 2px;
+            font-size: 10px;
+            p{
+                text-align: center;
+                margin: 0;
+            }
+            .sorting-button{
+                background-color: transparent;
+                text-decoration: underline;
+                color: variables.$theme-color;;
+                border: none;
+                height: 16.0px;
+                margin: 0 10px;
+                font-size: 10px;
+                padding: 0;
+                text-align: center;
+                outline: none;
+                cursor: pointer;
+            }
+            .sorting-info{
+                margin: 0 7px;
+                color: variables.$theme-color;
+                
+            }
+            .sorting-input{
+                margin-left: 3px;
+                margin-top: 3px;
+                height: 9px;
+                outline:none;
+                line-height: 9px;
+                border: none;
+                width: 121px
+            }
+        }
+        .login-panel{
+            grid-area: login;
+            display: flex;
+            align-items: center;
+            margin-left: 58px;
+            h5{
+                vertical-align: center;
+                width: fit-content;
+                font-weight: 400;
+                font-size: 10px;
+                line-height: 10px;
+                margin-left: 1px;
+            }
+            .login-user-button{
+                width: 20px;
+                height: 20px;
+                padding: 1px;
+                background-color: variables.$theme-color;
+                border-radius: 5px;
+                border: none;
+                outline:none;
+                margin-left: 7px;
+                img{
+                    width:90%;
+                    height: 90%;
+                    margin-top:1px;
+                    padding:0;
+                }
+            }
+        }
+    }
 }

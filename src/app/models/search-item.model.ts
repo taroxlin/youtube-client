@@ -1,35 +1,35 @@
 
- interface Default {
+export  interface Default {
     url: string;
     width: number;
     height: number;
 }
 
-interface Medium {
+export interface Medium {
     url: string;
     width: number;
     height: number;
 }
 
-interface High {
+export interface High {
     url: string;
     width: number;
     height: number;
 }
 
-interface Standard {
+export interface Standard {
     url: string;
     width: number;
     height: number;
 }
 
- interface Maxres {
+export interface Maxres {
     url: string;
     width: number;
     height: number;
 }
 
- interface Thumbnails {
+export interface Thumbnails {
     default: Default;
     medium: Medium;
     high: High;
@@ -37,12 +37,12 @@ interface Standard {
     maxres: Maxres;
 }
 
-interface Localized {
+export interface Localized {
     title: string;
     description: string;
 }
 
-interface Snippet {
+export interface Snippet {
     publishedAt: Date;
     channelId: string;
     title: string;
@@ -57,7 +57,7 @@ interface Snippet {
     defaultLanguage: string;
 }
 
- interface Statistics {
+export interface Statistics {
     viewCount: string;
     likeCount: string;
     dislikeCount: string;
@@ -65,10 +65,10 @@ interface Snippet {
     commentCount: string;
 }
 
-export class Item {
-    kind: string;
-    etag: string;
-    id: string;
-    snippet: Snippet;
-    statistics: Statistics;
+export class ItemModel {
+    public kind: string;
+    public etag: string;
+    public id: string;
+    public snippet: Snippet;
+    public statistics: Statistics;
 }
