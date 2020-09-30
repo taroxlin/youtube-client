@@ -1,0 +1,52 @@
+@use '../../../../assets/variables.scss';
+
+:host {
+    display: flex;
+    margin: auto;
+    box-shadow: 5px 5px 10px 0px rgba(94,116,145,0.25);
+    button{
+        position: absolute;
+        width: 32px;
+        height: 32px;
+        margin-left: -32px;
+        background-color: variables.$theme-color;
+        color: white;
+        font-size: 30px;
+        text-align: center;
+        border: none;
+        border-radius: 5px 0 0 5px;
+        outline: none;
+        padding: 0;
+        cursor: pointer;
+    }
+    img {
+        display: block;
+        flex: 5;
+    }
+    div {
+       background-color: #E5E5E5;
+       flex: 3;
+       padding: 0px 40px 10px;
+       h1 {
+           display: block;
+           div {
+               float: right;
+               padding: 0;
+               width: fit-content;
+               font-size: 14px;
+               color: gray;
+               line-height: 30px;
+               text-align: end;
+               margin-top: 10px;
+           }
+       }
+       p {
+            min-height: 390px;
+       }
+       div {
+            bottom: 0;
+            width: 60%;
+            margin: 0 auto;
+       }
+    }
+}

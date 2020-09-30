@@ -1,0 +1,15 @@
+<div class ="search-form">
+    <form>
+        <input name="value" placeholder="Enter you search type here..."/>
+        <a routerLink = 'search'>
+            <button  class='search-button'>search </button>
+        </a>
+        <button type='button' class='settings-button' (click) = 'coreService.toggleSorting()'>
+            <img
+            src="../../../assets/setup.svg" 
+            alt="blueYoutube icon"
+            height="100%"
+            width="100%" >
+        </button>
+    </form>
+</div>

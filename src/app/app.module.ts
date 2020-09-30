@@ -1,26 +1,20 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { FormsModule }   from '@angular/forms';
-import { AppRoutingModule } from './app-routing.module';
+import { NgModule} from '@angular/core';
+import { FormsModule, ReactiveFormsModule }   from '@angular/forms';
 import { AppComponent } from './app.component';
-import { SearchItemComponent } from './components/search-item/search-item.component';
-import { SearchResultsComponent } from './components/search-results/search-results.component';
-import { HeaderComponent } from './components/header/header.component';
+import { CoreModule } from './core/core.module';
+import { YoutubeModule } from './youtube/youtube.module';
+import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent,
-    SearchItemComponent,
-    SearchResultsComponent,
   ],
   imports: [
     BrowserModule,
+    ReactiveFormsModule,
+    CoreModule,
     AppRoutingModule,
-    FormsModule
-  ],
-  schemas: [
-    CUSTOM_ELEMENTS_SCHEMA
   ],
   bootstrap: [AppComponent]
 })

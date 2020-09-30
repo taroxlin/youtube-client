@@ -1,0 +1,55 @@
+@use '../../../../assets/variables';
+:host {
+    height: 32px;
+    grid-area: searchform;
+    width: 100%;
+    margin-top: 7px;
+    box-sizing: border-box;
+    .search-form{
+        form {
+            display: flex;
+            align-items : center;
+            height: 22px;
+            input {
+                background-color: whitesmoke;
+                outline: none;
+                border: none;
+                height: calc(100% - 2px);
+                line-height: 16px;
+                width: 90%;
+                font-size: 12px;
+            }
+            a {
+                height: 22px;
+                .search-button{
+                    vertical-align: top;
+                    margin-top: 0px;
+                    outline: none;
+                    background-color: variables.$theme-color;
+                    color:white;
+                    width: 65px;
+                    height: 100%;
+                    border:none;
+                    cursor: pointer;
+                    border-radius: 0 5px 5px 0;
+                    font-size: 10px;
+                    font-weight: 300;
+                    box-shadow: 1px 1px 2px 0px variables.$theme-color,1px -1px 2px 0px variables.$theme-color;
+                }
+            }
+            .settings-button{
+                background-color: variables.$theme-color;
+                vertical-align: top;
+                border-radius: 5px;
+                width: 20px;
+                height: 20px;
+                padding:4px;
+                margin-left: 9px;
+                border:none;
+                cursor: pointer;
+                outline:none;
+                box-shadow: 1px 1px 2px 0px variables.$theme-color,1px -1px 2px 0px variables.$theme-color;
+            }
+        }
+    }
+}

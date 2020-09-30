@@ -1,0 +1,6 @@
+<img src ='{{thumb.default.url}}'/>
+<app-statistics [stats] = "stats"></app-statistics>
+<h2 class='video-title'>{{item.snippet.title}}</h2>
+<button [routerLink] = "['video-detail',item.id]" >more...</button>
+
+

@@ -1,0 +1,36 @@
+:host {
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        height: 14px;
+        justify-content: space-between;
+        padding: 0;
+        margin: 11px 8px 0; 
+        li{
+            display: flex;
+            font-size: 9px;
+            margin: 0 6px 0 2px;
+            img{
+                height: 15px;
+                width: 15px;
+            }
+            p{
+                margin: 0;
+                line-height: 16px;
+            }
+            .eye-icon{
+                display: block;
+                margin-top: 1px;
+                margin-right: 2px;
+            }
+            .comments-icon{
+                margin-right: 3px;
+            }
+            .heart-icon, .disheart-icon, .comments-icon{
+                margin-top: 4px;
+                display: block;
+            }
+        }
+    }
+}

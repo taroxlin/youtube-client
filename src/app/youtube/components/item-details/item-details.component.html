@@ -1,0 +1,12 @@
+<button routerLink ='/search'>&#60;</button>
+<img
+src = "{{item.snippet.thumbnails.high.url}}"
+>
+<div appBorderColorDirective [date] = 'item.snippet.publishedAt'>
+    <h1>{{item.snippet.title}} <div>{{item.snippet.publishedAt | dateTransform}}</div></h1>
+    <p>{{item.snippet.description}}</p>
+    <div>
+    <app-statistics [stats]='item.statistics'></app-statistics>
+    </div>
+</div>
+

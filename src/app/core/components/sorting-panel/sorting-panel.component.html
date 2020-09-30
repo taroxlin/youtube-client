@@ -1,0 +1,7 @@
+<div class='sorting-form'>
+    <p>Sorting by:</p> 
+    <input class='sorting-button' type='button' value='date' (click) = 'dateSorting()'/>
+    <input class='sorting-button' type='button' value='count of views' (click) = 'viewSorting()'/>
+    <p class='sorting-info'>by word or sentence</p>
+    <input class='sorting-input' #sortWord type='input' (keyup)="onKey(sortWord.value)">
+</div>

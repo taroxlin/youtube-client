@@ -1,6 +1,6 @@
 <!-- Toolbar -->
-<div class="content" role="main">
-  <app-header [respond]="respond" (searchVal)="submitHandler($event)" ></app-header>
-  <app-search-results *ngIf='respond.videoArray' [respond]='respond' ></app-search-results>
+<app-header></app-header>
+<div class="app-context">
+  <router-outlet></router-outlet>
 </div>
-<router-outlet></router-outlet>
+<app-footer></app-footer>

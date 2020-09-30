@@ -1,7 +1,4 @@
-import { Component, ChangeDetectorRef } from '@angular/core';
-import { Response } from './components/search-results/response';
-import ExampleJson from '../assets/example.json';
-import { ItemModel } from './models/search-item.model';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -10,13 +7,6 @@ import { ItemModel } from './models/search-item.model';
 })
 export class AppComponent {
   public title: string = 'youtube-client';
-  public respond: Response = new Response();
-  public videoList: ItemModel[];
-  constructor() { }
-
   public ngOnInit(): void {
-  }
-  public submitHandler(searchValue: string): void {
-    this.respond.updateRespond(ExampleJson);
   }
 }

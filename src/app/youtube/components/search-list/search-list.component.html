@@ -1,0 +1,4 @@
+    <div *ngIf='videoList' class='search-results'>
+        <app-search-item  *ngFor='let item of videoList | itemTransform: youtube.sortedBy | itemFilter: youtube.filterString' [item]='item' appBorderColorDirective [date] = 'item.snippet.publishedAt'>
+        </app-search-item>
+    </div>

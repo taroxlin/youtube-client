@@ -1,0 +1,14 @@
+:host{
+    width: 43.5px;
+    display: block;
+    grid-area: logo;
+    height: 100%;
+    a {
+        cursor: pointer;
+        .logo-icon{
+            width: fit-content;
+            display: block;
+            margin: 0;
+        }
+    }
+}

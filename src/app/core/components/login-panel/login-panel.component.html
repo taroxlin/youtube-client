@@ -1,0 +1,17 @@
+<div class='login-panel'>
+    <h5 *ngIf="authService.isLoggedIn()" >Your Name</h5>
+    <a routerLink = "login">
+        <button class='login-user-button' *ngIf="!authService.isLoggedIn()">
+            <img
+            src="../../../assets/user.svg"
+            alt="user icon"
+            height="100%"
+            width="100%" 
+            />
+        </button>
+        <button class='logout-user-button' *ngIf="authService.isLoggedIn()" (click)='logoutClick()'>
+        Logout
+        </button>
+    </a>
+    
+</div>
